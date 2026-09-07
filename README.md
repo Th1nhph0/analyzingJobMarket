@@ -5,12 +5,9 @@
 # Data Analyst Job Market & Skills Analysis
 Bài tập lớn môn học: Phân tích Dữ liệu (Data Analysis Project)
 
-
 Sinh viên thực hiện: Võ Hoàng Thịnh
 
-
 Trường: Đại học Mở Thành phố Hồ Chí Minh (Ho Chi Minh City Open University)
-
 
 Chuyên ngành: Khoa học Dữ liệu (Computer Science - Data Science)
 
