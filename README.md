@@ -1,6 +1,5 @@
 # Analyzing the Job Market: Trends, Skills, and insights (10/2025 - 11/2025)
 
-# Data Analyst Job Market & Skills Analysis
 Bài tập lớn môn học: Phân tích Dữ liệu (Data Analysis Project)
 
 Sinh viên thực hiện: Võ Hoàng Thịnh
