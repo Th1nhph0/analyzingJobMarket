@@ -58,3 +58,12 @@ Frequency analysis of programming languages mentioned across job postings highli
 1. Clone this repository:
    ```bash
    git clone [https://github.com/Th1nhph0/analyzingJobMarket.git](https://github.com/Th1nhph0/analyzingJobMarket.git)
+
+  Install dependencies:
+
+```bash
+pip install pandas numpy matplotlib nltk
+
+Open the complete source code notebook to explore charts and analytical steps in detail:
+
+Jupyter Notebook: PTDL.ipynb
