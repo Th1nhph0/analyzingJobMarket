@@ -1,74 +1,60 @@
-# Analyzing the Job Market: Trends, Skills, and insights (10/2025 - 11/2025)
+# Analyzing the Job Market: Trends, Skills, and Insights (10/2025 - 11/2025)
 
-Bài tập lớn môn học: Phân tích Dữ liệu (Data Analysis Project)
+> **Course Assignment / Project:** Data Analysis Project  
+> **Author:** Võ Hoàng Thịnh  
+> **Institution:** Ho Chi Minh City Open University  
+> **Major:** Computer Science (Data Science)  
 
-Sinh viên thực hiện: Võ Hoàng Thịnh
+---
 
- # 1. Giới thiệu Dự án (Introduction)
-Trong bối cảnh thị trường tuyển dụng ngành Dữ liệu (Data Analytics) đang cạnh tranh gay gắt, việc nắm bắt chính xác xu hướng công nghệ, nhu cầu kỹ năng và mức lương là chìa khóa quan trọng cho định hướng nghề nghiệp của một Data Analyst.
+## 1. Introduction
+Amidst the highly competitive recruitment market for Data Analytics, accurately capturing technology trends, skill demands, and salary benchmarks is critical for a Data Analyst's career path.
 
-Dự án này thực hiện việc thu thập, làm sạch và khai thác dữ liệu từ hàng ngàn tin tuyển dụng thực tế nhằm trả lời cho các câu hỏi trọng tâm:
+This project collects, cleans, and mines data from thousands of real job postings to address key questions:
+* Which programming languages and tools dominate the job market?
+* How are average compensations and payment structures (hourly vs. annual) distributed?
+* What core skills are absolute must-haves for an intern or entry-level Data Analyst?
 
-Ngôn ngữ lập trình và công cụ nào đang thống trị thị trường tuyển dụng?
+---
 
-Mức thu nhập trung bình và cấu trúc trả lương (theo giờ, theo năm) phân hóa ra sao?
+## 2. Tech Stack
+The project is implemented entirely in **Python** within a **Jupyter Notebook** environment, utilizing robust libraries for data processing and visualization:
+* **Data Manipulation:** `Pandas`, `NumPy`
+* **Natural Language Processing & Tokenization:** `NLTK` (`word_tokenize`, `MWETokenizer`) for extracting skill keywords from job descriptions.
+* **Data Visualization:** `Matplotlib` for generating professional statistical charts.
 
-Những kỹ năng cốt lõi nào mà một Data Analyst thực tập/mới ra trường bắt buộc phải trang bị?
+---
 
-#  2. Công nghệ & Thư viện sử dụng (Tech Stack)
-Dự án được xây dựng hoàn toàn bằng ngôn ngữ Python thông qua môi trường Jupyter Notebook, sử dụng các thư viện chuyên sâu cho xử lý và trực quan hóa dữ liệu:
+## 3. Data Pipeline & Preprocessing
+The raw dataset (`gsearch_jobs.csv`) underwent rigorous technical processing steps:
+1. **Data Cleansing:** Filtered out null values, standardized date formats (`datetime`), and removed noise characters.
+2. **Salary Standardization:** 
+   * Split raw salary strings into minimum (`salary_min`), maximum (`salary_max`), average (`salary_avg`), and rate (`salary_rate`).
+   * Converted hourly and monthly rates into a uniform standard metric: **Annualized Salary (`salary_standardized`)** for straightforward comparison.
+3. **Keyword Tokenization:** Utilized `NLTK` to lowercase job descriptions, tokenize text, handle multi-word expressions (e.g., *Power BI*, *Data Lake*, *Machine Learning*), and filter against a standard keyword dictionary (Programming languages, Libraries, Analyst tools, Cloud tools).
 
-Xử lý dữ liệu (Data Manipulation): Pandas, NumPy
+---
 
-Xử lý ngôn ngữ tự nhiên & Tokenize: NLTK (word_tokenize, MWETokenizer) để trích xuất từ khóa kỹ năng từ mô tả công việc.
+## 4. Key Findings & Insights
+### A. Dataset Overview
+* **Total Records:** 1,820 job postings analyzed.
+* **Collection Span:** Data monitored across an extended chronological timeframe to ensure market neutrality.
 
-Trực quan hóa dữ liệu (Data Visualization): Matplotlib để vẽ biểu đồ thống kê chuyên nghiệp.
+### B. Top Essential Programming Languages for Data Analysts
+Frequency analysis of programming languages mentioned across job postings highlights the absolute dominance of core toolsets:
 
-# 3. Quy trình xử lý dữ liệu (Data Pipeline & Preprocessing)
-Tập dữ liệu đầu vào gồm các tin tuyển dụng (gsearch_jobs.csv) đã trải qua các bước xử lý kỹ thuật nghiêm ngặt:
+![Top Programming Languages](image_4e1c9c.png)
 
-Làm sạch dữ liệu (Data Cleansing): Loại bỏ các giá trị null, chuẩn hóa định dạng ngày tháng (datetime), loại bỏ ký tự nhiễu.
+* **SQL (~55% of job postings):** Maintains its crown as the most crucial skill, required for querying and extracting data from relational databases.
+* **Python (~32%):** The leading programming language for data cleansing, automation, and analytical modeling.
+* **R (~24%):** Retains steady demand within research and advanced statistical environments.
+* **SAS & Others:** Lower representation, typically catering to financial institutions or legacy corporate systems.
 
-Chuẩn hóa mức lương (Salary Standardization):
+> **💡 Business Insight:** For students and applicants targeting **Data Analyst Intern** positions, mastering the **SQL & Python** duo is a prerequisite to passing resume screens at over half of the hiring companies.
 
-Tách cột lương thô thành mức tối thiểu (salary_min), tối đa (salary_max), trung bình (salary_avg) và tần suất trả lương (salary_rate).
+---
 
-Quy đổi toàn bộ các mức lương theo giờ (hourly) hoặc theo tháng về chung một chuẩn Lương năm quy đổi (salary_standardized) để dễ dàng so sánh.
-
-Trích xuất từ khóa kỹ năng (Keyword Tokenization): Sử dụng NLTK để chuyển đổi văn bản mô tả công việc (description) thành các token chữ thường, xử lý các cụm từ ghép (như Power BI, Data Lake, Machine Learning) và lọc qua danh sách từ khóa chuẩn (Programming languages, Libraries, Analyst tools, Cloud tools).
-
-# 4. Kết quả & Phân tích chuyên sâu (Key Findings & Insights)
-A. Thống kê tổng quan dữ liệu
-Tổng số bản ghi: 1,820 tin tuyển dụng được phân tích.
-
-Thời gian thu thập: Dữ liệu được theo dõi và ghi nhận qua chuỗi thời gian dài, đảm bảo tính khách quan của thị trường.
-
-B. Top Ngôn ngữ lập trình thiết yếu cho Data Analyst
-Dựa trên phân tích tần suất xuất hiện của các ngôn ngữ lập trình trong tin tuyển dụng, kết quả cho thấy sự thống trị tuyệt đối của nhóm công cụ cốt lõi:
-
-SQL (chiếm ~55% tin tuyển dụng): Vẫn giữ vững ngôi vương là kỹ năng quan trọng nhất mà bất kỳ nhà phân tích dữ liệu nào cũng phải nắm vững để truy xuất dữ liệu từ cơ sở dữ liệu quan hệ.
-
-Python (~32%): Ngôn ngữ lập trình số một cho việc làm sạch dữ liệu, tự động hóa và xây dựng mô hình phân tích.
-
-R (~24%): Vẫn duy trì sức hút ổn định trong môi trường nghiên cứu và thống kê chuyên sâu.
-
-SAS & các ngôn ngữ khác: Xuất hiện với tỷ lệ thấp hơn, thường phục vụ cho các doanh nghiệp tài chính hoặc hệ thống legacy lớn.
-
-# Business Insight: Đối với sinh viên hoặc ứng viên vị trí Data Analyst Intern, việc thành thạo bộ đôi SQL và Python là điều kiện tiên quyết để vượt qua vòng hồ sơ tại hơn một nửa số công ty tuyển dụng.
-
-# 5. Hướng dẫn sử dụng & Khám phá mã nguồn (How to Run)
-Clone repository này về máy:
-
-
-   git clone https://github.com/Th1nhph0/analyzingJobMarket.git
-
-
-Cài đặt các thư viện phụ thuộc:
-
-
-   pip install pandas numpy matplotlib nltk
-
-Mở file báo cáo mã nguồn đầy đủ để xem chi tiết biểu đồ và các bước phân tích:
-
-Jupyter Notebook: PTDL.ipynb
-
+## 5. How to Run
+1. Clone this repository:
+   ```bash
+   git clone [https://github.com/Th1nhph0/analyzingJobMarket.git](https://github.com/Th1nhph0/analyzingJobMarket.git)
