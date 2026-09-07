@@ -63,12 +63,18 @@ SAS & các ngôn ngữ khác: Xuất hiện với tỷ lệ thấp hơn, thườ
 # 5. Hướng dẫn sử dụng & Khám phá mã nguồn (How to Run)
 Clone repository này về máy:
 
-Bash
-git clone https://github.com/Th1nhph0/analyzingJobMarket.git
-Cài đặt các thư viện phụ thuộc:
 
 Bash
+git clone https://github.com/Th1nhph0/analyzingJobMarket.git
+
+
+Cài đặt các thư viện phụ thuộc:
+
+
+Bash
+
 pip install pandas numpy matplotlib nltk
+
 Mở file báo cáo mã nguồn đầy đủ để xem chi tiết biểu đồ và các bước phân tích:
 
 Jupyter Notebook: PTDL.ipynb
