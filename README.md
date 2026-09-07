@@ -31,7 +31,7 @@ Xử lý ngôn ngữ tự nhiên & Tokenize: NLTK (word_tokenize, MWETokenizer) 
 
 Trực quan hóa dữ liệu (Data Visualization): Matplotlib để vẽ biểu đồ thống kê chuyên nghiệp.
 
-🔍 3. Quy trình xử lý dữ liệu (Data Pipeline & Preprocessing)
+# 3. Quy trình xử lý dữ liệu (Data Pipeline & Preprocessing)
 Tập dữ liệu đầu vào gồm các tin tuyển dụng (gsearch_jobs.csv) đã trải qua các bước xử lý kỹ thuật nghiêm ngặt:
 
 Làm sạch dữ liệu (Data Cleansing): Loại bỏ các giá trị null, chuẩn hóa định dạng ngày tháng (datetime), loại bỏ ký tự nhiễu.
@@ -63,7 +63,7 @@ SAS & các ngôn ngữ khác: Xuất hiện với tỷ lệ thấp hơn, thườ
 
 # Business Insight: Đối với sinh viên hoặc ứng viên vị trí Data Analyst Intern, việc thành thạo bộ đôi SQL và Python là điều kiện tiên quyết để vượt qua vòng hồ sơ tại hơn một nửa số công ty tuyển dụng.
 
-🚀 5. Hướng dẫn sử dụng & Khám phá mã nguồn (How to Run)
+# 5. Hướng dẫn sử dụng & Khám phá mã nguồn (How to Run)
 Clone repository này về máy:
 
 Bash
