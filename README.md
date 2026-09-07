@@ -65,7 +65,7 @@ Clone repository này về máy:
 
 
 Bash
-git clone https://github.com/Th1nhph0/analyzingJobMarket.git
+ git clone https://github.com/Th1nhph0/analyzingJobMarket.git
 
 
 Cài đặt các thư viện phụ thuộc:
@@ -73,10 +73,9 @@ Cài đặt các thư viện phụ thuộc:
 
 Bash
 
-pip install pandas numpy matplotlib nltk
+ pip install pandas numpy matplotlib nltk
 
 Mở file báo cáo mã nguồn đầy đủ để xem chi tiết biểu đồ và các bước phân tích:
 
 Jupyter Notebook: PTDL.ipynb
 
-Dự án hoàn thành nhằm mục đích nâng cao năng lực thực chiến về xử lý dữ liệu và làm tài liệu minh chứng năng lực (Portfolio) ứng tuyển vị trí Data Analyst Intern.
