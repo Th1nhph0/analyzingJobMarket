@@ -4,10 +4,6 @@ Bài tập lớn môn học: Phân tích Dữ liệu (Data Analysis Project)
 
 Sinh viên thực hiện: Võ Hoàng Thịnh
 
-Trường: Đại học Mở Thành phố Hồ Chí Minh (Ho Chi Minh City Open University)
-
-Chuyên ngành: Khoa học Dữ liệu (Computer Science - Data Science)
-
  # 1. Giới thiệu Dự án (Introduction)
 Trong bối cảnh thị trường tuyển dụng ngành Dữ liệu (Data Analytics) đang cạnh tranh gay gắt, việc nắm bắt chính xác xu hướng công nghệ, nhu cầu kỹ năng và mức lương là chìa khóa quan trọng cho định hướng nghề nghiệp của một Data Analyst.
 
