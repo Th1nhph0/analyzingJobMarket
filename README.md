@@ -2,8 +2,6 @@
 
 > **Course Assignment / Project:** Data Analysis Project  
 > **Author:** Võ Hoàng Thịnh  
-> **Institution:** Ho Chi Minh City Open University  
-> **Major:** Computer Science (Data Science)  
 
 ---
 
@@ -59,10 +57,11 @@ Frequency analysis of programming languages mentioned across job postings highli
    ```bash
    git clone [https://github.com/Th1nhph0/analyzingJobMarket.git](https://github.com/Th1nhph0/analyzingJobMarket.git)
 
-  Install dependencies:
+2. Install dependencies:
 
-```bash
-pip install pandas numpy matplotlib nltk
+   ```bash
+   pip install pandas numpy matplotlib nltk
+
 
 Open the complete source code notebook to explore charts and analytical steps in detail:
 
